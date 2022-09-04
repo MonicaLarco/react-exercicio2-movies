@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { MoviesService } from "../api/MoviesService";
 import { useParams } from 'react-router-dom';
 
-export function MovieDetail() {
+export default function MovieDetail() {
     const [movie, setMovie] = useState([]);
     let { movieId } = useParams();
 
