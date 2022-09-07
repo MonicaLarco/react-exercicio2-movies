@@ -4,7 +4,7 @@ const initialState = {
     movies: []
 };
 
-export function cart(state= initialState, action) {
+export function cart(state = initialState, action) {
     switch (action.type) {
         case SET_MOVIE:
             return {
@@ -13,6 +13,6 @@ export function cart(state= initialState, action) {
             };
     
         default:
-            break;
+            return state;
     }
 }
