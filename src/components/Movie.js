@@ -1,16 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { MovieContainer } from "../styles/MovieContainer";
 
 const Movie = ({ movieId, movieTitle, overview }) => {
 
 
     return (
-        <div className="movie">
+        <MovieContainer>
             <h3>
-                <Link to={`/movie/${movieId}`}>{ movieTitle }</Link>
+                <Link to={`/movie/${movieId}`}>{movieTitle}</Link>
             </h3>
-            <p className="movie-overview">{ overview }</p>
-        </div>
+            <p className="movie-overview">{overview}</p>
+        </MovieContainer>
 
     );
 }
